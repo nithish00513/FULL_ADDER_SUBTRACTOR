@@ -43,6 +43,7 @@ Borrow out = A'Bin + A'B + BBin
 Write the detailed procedure here
 
 **Program:**
+```
 
 module halfadd_top(a,b,sum,carry);
 input a,b;
@@ -50,7 +51,7 @@ output sum,carry;
  assign sum = a^b;
  assign carry = a & b;
 endmodule
-
+```
 
 
 
