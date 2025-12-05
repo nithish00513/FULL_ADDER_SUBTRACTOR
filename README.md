@@ -43,7 +43,7 @@ Borrow out = A'Bin + A'B + BBin
 Write the detailed procedure here
 
 **Program:**
-*Half_adder*
+
 module halfadd_top(a,b,sum,carry);
 input a,b;
 output sum,carry; 
@@ -51,13 +51,7 @@ output sum,carry;
  assign carry = a & b;
 endmodule
 
-*Half_subtractor*
-module halfsub_top(a,b,D,Bo);
-input a,b;
-output D,Bo; // Outputs sum and carry for half adder:Outputs difference D,Borrow Bo for half subtractor
-assign D = a ^ b;
-  assign Bo = ~a & b;
-endmodule
+
 
 
 /* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. 
